@@ -1,0 +1,137 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+.logo {
+  width: 120px;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #c00;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #c00;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: black; /* ✅ Now visible */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  nav.mobile-open ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* ✅ Matches header */
+    border-top: 1px solid #ddd;
+    padding: 8px 0; /* compact */
+    max-height: 60vh; /* don't cover entire screen */
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  nav.mobile-open ul li {
+    margin: 2px 0;
+    text-align: center;
+  }
+
+  nav.mobile-open ul li a {
+    color: black; /* ✅ Visible on white */
+    font-size: 15px;
+    padding: 8px 12px; /* tighter */
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-header {
+    padding: 8px 3%;
+  }
+  
+  .logo {
+    width: 96px; /* reduce for small phones */
+  }
+
+  nav.mobile-open ul li a {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}

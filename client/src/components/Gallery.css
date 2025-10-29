@@ -1,0 +1,263 @@
+.inventory-section {
+  padding: 60px 80px;
+  background: #f8f8f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.inventory-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.inventory-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #0d0d0d; /* ensure visible on light bg */
+}
+
+.inventory-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inventory-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.inventory-tabs button {
+  padding: 10px 24px;
+  border: 1.5px solid #ccc;
+  background: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inventory-tabs button.active {
+  background-color: #ff3c2f;
+  color: white;
+  border-color: #ff3c2f;
+}
+
+.inventory-tabs button:hover {
+  opacity: 0.9;
+}
+
+/* Card Grid */
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  margin-top: 48px; /* reduce excessive gap under heading */
+}
+
+/* Card */
+.inventory-card .whatsapp-icon {
+  all: unset;
+   margin-left: 10px;
+  width: 30px;
+  height: 28px;
+  margin-bottom: -20px;
+  margin-right: 40px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+
+
+.inventory-card:hover {
+  transform: translateY(-6px);
+}
+
+.inventory-card img {
+  width: 100%;
+  height: 220px; /* unified fixed height */
+  object-fit: cover;
+  object-position: center;
+   
+  margin-bottom: 15px;
+  border: none;        /* remove any image border */
+  outline: none;       /* ensure no outline shows */
+}
+
+.inventory-card h3 {
+  color: #000000;
+  margin: 0;
+  padding: 10px;
+}
+     
+.inventory-card p {
+  margin: 5px 0 0px;
+  color: #222;
+  padding: 8px;
+}
+
+.scooty-info {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.scooty-bottom {
+  display: flex;
+  /* align-items: center; */
+      margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.price {
+  color: #ff3c2f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.view-btn {
+  padding: 8px 18px;
+  background: rgb(255, 0, 0);
+  color: white;
+  font-size: 13px;
+  border: none;        /* remove border */
+  outline: none;       /* remove outline */
+  box-shadow: none;    /* remove any default shadow */
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.view-btn:hover {
+  background-color: #222;
+}
+
+.view-btn:focus,
+.view-btn:focus-visible,
+.view-btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.whatsapp-container {
+ display: inline-flex;
+  align-items: center;
+  gap: 4px;           
+  height: 18px;       
+  width: auto;        
+  padding: 2px 6px;   
+ border-radius: 6px; 
+
+}
+
+
+.whatsapp-icon {
+  width: 30px;
+  height: 28px;
+  margin-bottom: -8px;
+  margin-right: 40px;
+  transition: transform 0.2s ease;
+  background: transparent;
+  padding: 0;
+  object-fit: contain;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.load-more-container {
+  display: flex;
+  justify-content: center;   /* Horizontally center the button */
+  margin-top: 40px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+.inventory-card{
+
+    BACKGROUND: #ffffff;
+    BORDER-RADIUS: 10PX;
+    box-shadow: 0px 0px 7px 0px #ff00008c;
+}
+.section-123{
+  padding: 10px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 767px) {
+  .inventory-section {
+    padding: 24px 16px;
+    padding-top: calc(var(--header-h, 80px) + 16px); /* ensure clears fixed header */
+  }
+  .inventory-header h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
+  }
+  .inventory-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .inventory-card img {
+    height: 220px; /* keep consistent height on mobile */
+  }
+  .scooty-bottom {
+    gap: 12px;
+  }
+  .view-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .whatsapp-icon {
+    margin-right: 12px;
+  }
+  .inventory-header p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .inventory-section {
+    padding: 40px 32px;
+  }
+  .inventory-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .inventory-card img {
+    height: 220px; /* keep consistent height on tablet */
+  }
+}
+
+@media (min-width: 1025px) {
+  .inventory-grid {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
