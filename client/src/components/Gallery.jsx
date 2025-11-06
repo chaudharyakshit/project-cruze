@@ -8,8 +8,8 @@ import EcoSwift from "../assets/EcoSwift.webp";
 import Ecojoy from "../assets/eco-joy.webp";
 import EcoGlide from "../assets/Eco-Glider.webp";
 import Rapidshine from "../assets/Rapi-dsign.webp";
-import EcoZeon from "../assets/Inner-Images/Eco Zeon/Eco-zeon.webp";
-import Ecozeon  from "../assets/Eco-Zeon.webp";
+
+import EcoZeon from '../assets/Inner-Images/EcoZeon/EcoZeon.webp';
 const scootyData = [
   {
     title: "Cruze Blade",
@@ -70,7 +70,7 @@ const scootyData = [
      seller: "Ecocruze",
      type: "Electric",
      fuel: "Battery",
-     img: Ecozeon,
+     img: EcoZeon,
    },
   // {
    //  title: 'Eco Whiz',

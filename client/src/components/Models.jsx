@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import EcoShine from '../assets/Eco-Shine.webp'
 import EcoGlider from '../assets/Eco-Glider.webp'
 import Ecojoy from '../assets/eco-joy.webp'
-import EcoZeon from '../assets/Inner-Images/Eco Zeon/Eco-zeon.webp'
+import EcoZeon from '../assets/Inner-Images/EcoZeon/EcoZeon.webp';
 
 // 3D scooter models from reputable sources
 const models = [
@@ -65,7 +65,7 @@ const models = [
     name: 'Eco Zeon',
     tagline: 'Urban Performance',
     price: 'Starting at ',
-    image: EcoZeon,
+    image:  EcoZeon,
     poster: EcoZeon,
     specs: [
       { value: '60', label: 'Km/h' },
