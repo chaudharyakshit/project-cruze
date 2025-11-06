@@ -5,14 +5,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
+import blueFront from '../assets/Inner-Images/EcoZeon/Blue/2.webp';
+import blueLeft  from '../assets/Inner-Images/EcoZeon/Blue/1.webp';
+import blueRight from '../assets/Inner-Images/EcoZeon/Blue/3.webp';
+import redFront  from '../assets/Inner-Images/EcoZeon/Red/2.webp';
+import redLeft   from '../assets/Inner-Images/EcoZeon/Red/1.webp';
+import redRight  from '../assets/Inner-Images/EcoZeon/Red/3.webp';
 
-
-import blueFront from '../assets/Inner-Images/Eco Zeon/Blue/2.webp';
-import blueLeft from '../assets/Inner-Images/Eco Zeon/Blue/1.webp';
-import blueRight from '../assets/Inner-Images/Eco Zeon/Blue/3.webp';
-import redFront from '../assets/Inner-Images/Eco Zeon/Red/2.webp';
-import redLeft from '../assets/Inner-Images/Eco Zeon/Red/1.webp';
-import redRight from '../assets/Inner-Images/Eco Zeon/Red/3.webp';
 // fallback if you later add more images
 const PLACEHOLDER = '/src/assets/hero-1.webp';
 
