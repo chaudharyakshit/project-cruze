@@ -1,15 +1,18 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import './EcoZeon.css';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
-import EcoZeonMain from '../assets/Inner-Images/Eco Zeon/Eco-zeon.png';
-import Red1 from '../assets/Inner-Images/Eco Zeon/Red/1.png';
-import Red2 from '../assets/Inner-Images/Eco Zeon/Red/2.png';
-import Red3 from '../assets/Inner-Images/Eco Zeon/Red/3.png';
-import Blue1 from '../assets/Inner-Images/Eco Zeon/Blue/1.png';
-import Blue2 from '../assets/Inner-Images/Eco Zeon/Blue/2.png';
-import Blue3 from '../assets/Inner-Images/Eco Zeon/Blue/3.png';
+
+
+import blueFront from '../assets/Inner-Images/Eco Zeon/Blue/2.webp';
+import blueLeft from '../assets/Inner-Images/Eco Zeon/Blue/1.webp';
+import blueRight from '../assets/Inner-Images/Eco Zeon/Blue/3.webp';
+import redFront from '../assets/Inner-Images/Eco Zeon/Red/2.webp';
+import redLeft from '../assets/Inner-Images/Eco Zeon/Red/1.webp';
+import redRight from '../assets/Inner-Images/Eco Zeon/Red/3.webp';
 // fallback if you later add more images
 const PLACEHOLDER = '/src/assets/hero-1.webp';
 
@@ -34,19 +37,19 @@ export default function ScootyDetails() {
       includes: ['1 Scooter', '1 Charger', "Owner’s Manual"],
       variants: [
         {
-          colorName: 'Red',
-          colorHex: '#c01111',
-          sku: 'ZEON-RED-01',
+          colorName: 'Blue',
+          colorHex: '#050553',
+          sku: 'ZEON-BLU-01',
           stock: 12,
-          images: [Red1, Red2, Red3]
+          images: [blueFront, blueLeft, blueRight]
         },
         {
-          colorName: 'Blue',
-          colorHex: '#0d2f72',
-          sku: 'ZEON-BLU-01',
+          colorName: 'Red',
+          colorHex: '#e74c3c',
+          sku: 'ZEON-RED-01',
           stock: 8,
-          images: [Blue1, Blue2, Blue3]
-        },
+          images: [redFront, redLeft, redRight]
+        }
       ],
       specs: {
         motorPowerW: 1000,
@@ -160,7 +163,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/919557533303?text=${encodeURIComponent(`Hi, I'm interested in the ${product.name} model!`)}`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -263,7 +266,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/919557533303?text=${encodeURIComponent(`Hi, I'm interested in the ${product.name} model!`)}`}
+          href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

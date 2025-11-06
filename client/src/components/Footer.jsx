@@ -9,7 +9,7 @@ import {
   FaArrowUp
 } from 'react-icons/fa';
 
-import logo from '../assets/main-logo.png'; // Adjust the path if needed
+import logo from '../assets/main-logo.webp'; // Adjust the path if needed
 import ChatBot from './ChatBot';
 
 const Footer = () => {
@@ -68,6 +68,7 @@ const Footer = () => {
               <li><a href="/contact">Contact us</a></li>
               <li><a href="/dealership">Dealership</a></li>
               <li><a href="/News">News</a></li>
+              <li><a href="/invertors">Ecocruze Invertor</a></li>
             </ul>
           </div>
 
@@ -85,7 +86,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025  ECOCRUZE Scooter. All rights reserved. |
+          <p>&copy; 2025 ECOCRUZE Scooter. All rights reserved. |
             <a href="#"> Privacy Policy </a> |
             <a href="#"> Terms of Use </a>
           </p>

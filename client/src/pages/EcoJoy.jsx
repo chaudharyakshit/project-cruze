@@ -7,26 +7,26 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import blackFront from '../assets/Inner-Images/Eco joy/black/front.png';
-import blackLeft from '../assets/Inner-Images/Eco joy/black/left.png';
-import blackRight from '../assets/Inner-Images/Eco joy/black/right.png';
-import blackSide from '../assets/Inner-Images/Eco joy/black/side.png';  
-import blueFront from '../assets/Inner-Images/Eco joy/blue/front.png';
-import blueLeft from '../assets/Inner-Images/Eco joy/blue/left.png';
-import blueRight from '../assets/Inner-Images/Eco joy/blue/right.png';
-import blueSide from '../assets/Inner-Images/Eco joy/blue/side.png';  
-import grayFront from '../assets/Inner-Images/Eco joy/gray/front.png';
-import grayleft from '../assets/Inner-Images/Eco joy/gray/left.png';
-import grayRight from '../assets/Inner-Images/Eco joy/gray/right.png';
-import graySide from '../assets/Inner-Images/Eco joy/gray/side.png';  
-import redFront from '../assets/Inner-Images/Eco joy/red/front.png';
-import redLeft from '../assets/Inner-Images/Eco joy/red/left.png';
-import redRight from '../assets/Inner-Images/Eco joy/red/right.png';
-import redSide from '../assets/Inner-Images/Eco joy/red/side.png';  
-import whiteFront from '../assets/Inner-Images/Eco joy/white/front.png';
-import whiteLeft from '../assets/Inner-Images/Eco joy/white/left.png';
-import whiteRight from '../assets/Inner-Images/Eco joy/white/right.png';
-import whiteSide from '../assets/Inner-Images/Eco joy/white/side.png';
+import blackFront from '../assets/Inner-Images/Eco joy/black/front.webp';
+import blackLeft from '../assets/Inner-Images/Eco joy/black/left.webp';
+import blackRight from '../assets/Inner-Images/Eco joy/black/right.webp';
+import blackSide from '../assets/Inner-Images/Eco joy/black/side.webp';  
+import blueFront from '../assets/Inner-Images/Eco joy/blue/front.webp';
+import blueLeft from '../assets/Inner-Images/Eco joy/blue/left.webp';
+import blueRight from '../assets/Inner-Images/Eco joy/blue/right.webp';
+import blueSide from '../assets/Inner-Images/Eco joy/blue/side.webp';  
+import grayFront from '../assets/Inner-Images/Eco joy/gray/front.webp';
+import grayleft from '../assets/Inner-Images/Eco joy/gray/left.webp';
+import grayRight from '../assets/Inner-Images/Eco joy/gray/right.webp';
+import graySide from '../assets/Inner-Images/Eco joy/gray/side.webp';  
+import redFront from '../assets/Inner-Images/Eco joy/red/front.webp';
+import redLeft from '../assets/Inner-Images/Eco joy/red/left.webp';
+import redRight from '../assets/Inner-Images/Eco joy/red/right.webp';
+import redSide from '../assets/Inner-Images/Eco joy/red/side.webp';  
+import whiteFront from '../assets/Inner-Images/Eco joy/white/front.webp';
+import whiteLeft from '../assets/Inner-Images/Eco joy/white/left.webp';
+import whiteRight from '../assets/Inner-Images/Eco joy/white/right.webp';
+import whiteSide from '../assets/Inner-Images/Eco joy/white/side.webp';
 
 // fallback if you later add more images
 const PLACEHOLDER = '/src/assets/hero-1.webp';
@@ -200,7 +200,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -303,7 +303,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+          href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

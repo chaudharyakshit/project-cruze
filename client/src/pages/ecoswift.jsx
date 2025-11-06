@@ -7,26 +7,26 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import  blackfront  from '../assets/Inner-Images/Eco Swift/black/front.png';
-import  blackleft  from '../assets/Inner-Images/Eco Swift/black/left.png';
-import  blackright  from '../assets/Inner-Images/Eco Swift/black/right.png';
-import  blackside  from '../assets/Inner-Images/Eco Swift/black/side.png';  
-import  bluefront  from '../assets/Inner-Images/Eco Swift/blue/front.png';
-import  blueleft  from '../assets/Inner-Images/Eco Swift/blue/left.png';
-import  blueright  from '../assets/Inner-Images/Eco Swift/blue/right.png';
-import  blueside  from '../assets/Inner-Images/Eco Swift/blue/side.png';
-import  greyfront  from '../assets/Inner-Images/Eco Swift/grey/front.png';
-import  greyleft  from '../assets/Inner-Images/Eco Swift/grey/left.png';
-import  greyright  from '../assets/Inner-Images/Eco Swift/grey/right.png';
-import  greyside  from '../assets/Inner-Images/Eco Swift/grey/side.png';  
-import  redfront  from '../assets/Inner-Images/Eco Swift/red/front.png';
-import  redleft  from '../assets/Inner-Images/Eco Swift/red/left.png';
-import  redright  from '../assets/Inner-Images/Eco Swift/red/right.png';  
-import  redside  from '../assets/Inner-Images/Eco Swift/red/side.png';
-import  whitefront  from '../assets/Inner-Images/Eco Swift/white/front.png';
-import  whiteleft  from '../assets/Inner-Images/Eco Swift/white/left.png';
-import  whiteright  from '../assets/Inner-Images/Eco Swift/white/right.png';
-import  whiteside  from '../assets/Inner-Images/Eco Swift/white/side.png';
+import  blackfront  from '../assets/Inner-Images/Eco Swift/black/front.webp';
+import  blackleft  from '../assets/Inner-Images/Eco Swift/black/left.webp';
+import  blackright  from '../assets/Inner-Images/Eco Swift/black/right.webp';
+import  blackside  from '../assets/Inner-Images/Eco Swift/black/side.webp';  
+import  bluefront  from '../assets/Inner-Images/Eco Swift/blue/front.webp';
+import  blueleft  from '../assets/Inner-Images/Eco Swift/blue/left.webp';
+import  blueright  from '../assets/Inner-Images/Eco Swift/blue/right.webp';
+import  blueside  from '../assets/Inner-Images/Eco Swift/blue/side.webp';
+import  greyfront  from '../assets/Inner-Images/Eco Swift/grey/front.webp';
+import  greyleft  from '../assets/Inner-Images/Eco Swift/grey/left.webp';
+import  greyright  from '../assets/Inner-Images/Eco Swift/grey/right.webp';
+import  greyside  from '../assets/Inner-Images/Eco Swift/grey/side.webp';  
+import  redfront  from '../assets/Inner-Images/Eco Swift/red/front.webp';
+import  redleft  from '../assets/Inner-Images/Eco Swift/red/left.webp';
+import  redright  from '../assets/Inner-Images/Eco Swift/red/right.webp';  
+import  redside  from '../assets/Inner-Images/Eco Swift/red/side.webp';
+import  whitefront  from '../assets/Inner-Images/Eco Swift/white/front.webp';
+import  whiteleft  from '../assets/Inner-Images/Eco Swift/white/left.webp';
+import  whiteright  from '../assets/Inner-Images/Eco Swift/white/right.webp';
+import  whiteside  from '../assets/Inner-Images/Eco Swift/white/side.webp';
 
 
 
@@ -203,7 +203,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -306,7 +306,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+          href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

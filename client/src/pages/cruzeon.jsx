@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import './cruzeon.css';
+import '../styles/pdp.css';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,9 +7,9 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import blueFront from '../assets/Inner-Images/cruzeon/2.png';
-import blueLeft from '../assets/Inner-Images/cruzeon/1.png';
-import blueright from '../assets/Inner-Images/cruzeon/3.png';
+import blueFront from '../assets/Inner-Images/cruzeon/2.webp';
+import blueLeft from '../assets/Inner-Images/cruzeon/1.webp';
+import blueright from '../assets/Inner-Images/cruzeon/3.webp';
 
 // fallback if you later add more images
 const PLACEHOLDER = '/src/assets/hero-1.webp';
@@ -183,7 +183,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -286,7 +286,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+          href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

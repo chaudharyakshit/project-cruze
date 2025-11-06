@@ -13,14 +13,20 @@
 
 .features-grid1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards in one line */
+  grid-template-columns: repeat(4, 1fr); /* keep this same */
   gap: 10px;
-  width: 100%; /* take full width */
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
   z-index: 2;
+
+  /* ✅ ADD THESE LINES */
+  justify-content: center;   /* centers the whole grid */
+  align-items: start;         /* keeps boxes aligned at the top */
+  box-sizing: border-box;     /* avoids hidden overflow that shifts layout */
 }
+
 
 .feature-card {
   padding: 30px;
@@ -79,11 +85,13 @@
   animation-delay: 0.6s;
 }
 
-@media (max-width: 1024px) {
-  .features-grid1 {
-    grid-template-columns: repeat(2, 1fr) !important;
+@media (max-width: 600px) {
+  .feature-card {
+    padding: 18px 15px;
+    margin-bottom: 10px;
   }
 }
+
 
 @media (max-width: 600px) {
   .features-grid1 {

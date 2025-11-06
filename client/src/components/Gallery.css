@@ -61,7 +61,6 @@
 /* Card */
 .inventory-card .whatsapp-icon {
   all: unset;
-   margin-left: 10px;
   width: 30px;
   height: 28px;
   margin-bottom: -20px;
@@ -78,25 +77,23 @@
 
 .inventory-card img {
   width: 100%;
-  height: 220px; /* unified fixed height */
+  height: 200px;
   object-fit: cover;
   object-position: center;
-   
+  border-radius: 6px;
   margin-bottom: 15px;
-  border: none;        /* remove any image border */
-  outline: none;       /* ensure no outline shows */
 }
 
 .inventory-card h3 {
   color: #000000;
-  margin: 0;
-  padding: 10px;
+  margin: 10px 0; /* add top & bottom space */
+  padding: 0 10px; /* optional: adds left-right space */
 }
-     
+
 .inventory-card p {
-  margin: 5px 0 0px;
+  margin: 10px 0 ;
   color: #222;
-  padding: 8px;
+  padding: 0 10px; /* optional: adds left-right space */
 }
 
 .scooty-info {
@@ -126,9 +123,7 @@
   background: rgb(255, 0, 0);
   color: white;
   font-size: 13px;
-  border: none;        /* remove border */
-  outline: none;       /* remove outline */
-  box-shadow: none;    /* remove any default shadow */
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
@@ -140,23 +135,19 @@
   background-color: #222;
 }
 
-.view-btn:focus,
-.view-btn:focus-visible,
-.view-btn:active {
-  outline: none;
-  box-shadow: none;
-}
+
 
 .whatsapp-container {
- display: inline-flex;
+  display: inline-flex;
   align-items: center;
-  gap: 4px;           
-  height: 18px;       
-  width: auto;        
-  padding: 2px 6px;   
- border-radius: 6px; 
-
+  gap: 4px;             /* space between icon & text */
+  height: 18px;
+  width: auto;
+  padding: 0 10px;      /* same padding as .whatsapp-icon */
+  border-radius: 6px;
+  background: transparent; /* optional */
 }
+
 
 
 .whatsapp-icon {
@@ -166,9 +157,10 @@
   margin-right: 40px;
   transition: transform 0.2s ease;
   background: transparent;
-  padding: 0;
+  padding: 0 10px; /* same padding as before (left & right spacing) */
   object-fit: contain;
 }
+
 
 .whatsapp-icon:hover {
   transform: scale(1.1);
@@ -225,7 +217,7 @@
     margin-top: 20px;
   }
   .inventory-card img {
-    height: 220px; /* keep consistent height on mobile */
+    height: 180px;
   }
   .scooty-bottom {
     gap: 12px;
@@ -252,7 +244,7 @@
     margin-top: 48px;
   }
   .inventory-card img {
-    height: 220px; /* keep consistent height on tablet */
+    height: 170px;
   }
 }
 

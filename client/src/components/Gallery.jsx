@@ -1,15 +1,15 @@
 // Inventory.jsx
 import React, { useState } from "react";
 import "./Gallery.css";
-import cruzeon from "../assets/cruzeon.png";
-import CruzeBlade from "../assets/Cruze-Blade.png";
-import EcoShine from "../assets/Eco-Shine.png";
-import EcoSwift from "../assets/EcoSwift.png";
-import Ecojoy from "../assets/eco-joy.png";
-import EcoGlide from "../assets/Eco-Glider.png";
-import Rapidshine from "../assets/Rapi-dsign.png";
-import EcoZeonImg from "../assets/Inner-Images/Eco Zeon/Eco-zeon.png";
-
+import cruzeon from "../assets/cruzeon.webp";
+import CruzeBlade from "../assets/Cruze-Blade.webp";
+import EcoShine from "../assets/Eco-Shine.webp";
+import EcoSwift from "../assets/EcoSwift.webp";
+import Ecojoy from "../assets/eco-joy.webp";
+import EcoGlide from "../assets/Eco-Glider.webp";
+import Rapidshine from "../assets/Rapi-dsign.webp";
+import EcoZeon from "../assets/Inner-Images/Eco Zeon/Eco-zeon.webp";
+import Ecozeon  from "../assets/Eco-Zeon.webp";
 const scootyData = [
   {
     title: "Cruze Blade",
@@ -64,45 +64,45 @@ const scootyData = [
   fuel: "Battery",
   img: Rapidshine,
 },
-{
-  title: "Eco Zeon",
-  seller: "Ecocruze",
-  type: "Electric",
-  fuel: "Battery",
-  img: EcoZeonImg,
-},
 
+   {
+     title: "Eco Zeon",
+     seller: "Ecocruze",
+     type: "Electric",
+     fuel: "Battery",
+     img: Ecozeon,
+   },
   // {
-  //   title: 'Eco Whiz',
-  //   seller: 'Pure EV Dealer',
-  //   type: 'Electric',
-  //   fuel: 'Battery',
-  //   img: 'https://cdn.bikedekho.com/processedimages/tvs/iqube-s/source/iqube-s6825981c36579.jpg',
-  // },
+   //  title: 'Eco Whiz',
+     //seller: 'Pure EV Dealer',
+     //type: 'Electric',
+     //fuel: 'Battery',
+    // img: 'https://cdn.bikedekho.com/processedimages/tvs/iqube-s/source/iqube-s6825981c36579.jpg',
+   //},
   // {
-  //   title: 'Ampere Magnus',
-  //   seller: 'Ampere Dealer',
-  //   cc: '135cc',
-  //   type: 'Electric',
-  //   fuel: 'Battery',
-  //   img: 'https://images.unsplash.com/photo-1648204834832-78e68052c04f?w=600',
-  // },
-  // {
-  //   title: 'Lectrix EV LXS',
-  //   seller: 'Lectrix India',
-  //   cc: '125cc',
-  //   type: 'Electric',
-  //   fuel: 'Battery',
-  //   img: 'https://evtechnews.in/wp-content/uploads/2020/07/Ather450X-5.png',
-  // },
-  // {
-  //   title: 'Evtric Axis',
-  //   seller: 'Evtric Motors',
-  //   cc: '100cc',
-  //   type: 'Electric',
-  //   fuel: 'Battery',
-  //   img: 'https://evtechnews.in/wp-content/uploads/2020/07/Ather450X-5.png',
-  // }
+    // title: 'Ampere Magnus',
+     //seller: 'Ampere Dealer',
+     //cc: '135cc',
+     //type: 'Electric',
+     //fuel: 'Battery',
+   //  img: 'https://images.unsplash.com/photo-1648204834832-78e68052c04f?w=600',
+   //},
+   //{
+     //title: 'Lectrix EV LXS',
+     //seller: 'Lectrix India',
+     //cc: '125cc',
+   //type: 'Electric',
+     //fuel: 'Battery',
+     //img: 'https://evtechnews.in/wp-content/uploads/2020/07/Ather450X-5.png',
+   //},
+   //{
+     //title: 'Evtric Axis',
+     //seller: 'Evtric Motors',
+     //cc: '100cc',
+     //type: 'Electric',
+     //fuel: 'Battery',
+     //img: 'https://evtechnews.in/wp-content/uploads/2020/07/Ather450X-5.png',
+   //}
 ];
 
 const Inventory = () => {
@@ -166,7 +166,7 @@ const Inventory = () => {
     : (scooty.title === "Eco Swift" || scooty.title === "EcoSwift")
     ? "/ecoswift-details"
     : (scooty.title === "Eco Zeon" || scooty.title === "EcoZeon")
-    ? "/Ecozeon-details"
+    ? "/ecozeon-details"
     : "#"
 }
 
@@ -187,7 +187,7 @@ const Inventory = () => {
       "Eco Swift",
       "EcoSwift",
       "Eco Zeon",
-      "EcoZeon"
+      
     ];
     if (!supportedTitles.includes(scooty.title)) {
       e.preventDefault();

@@ -11,34 +11,34 @@ import imgB from '../assets/9b.webp';
 import imgC from '../assets/10b.webp';
 
 // Black
-import blackFront from '../assets/Inner-Images/Cruze-Blade/black/front.png';
-import blackLeft from '../assets/Inner-Images/Cruze-Blade/black/left.png';
-import blackRight from '../assets/Inner-Images/Cruze-Blade/black/right.png';
-import blackSide from '../assets/Inner-Images/Cruze-Blade/black/side.png';
+import blackFront from '../assets/Inner-Images/Cruze-Blade/black/front.webp';
+import blackLeft from '../assets/Inner-Images/Cruze-Blade/black/left.webp';
+import blackRight from '../assets/Inner-Images/Cruze-Blade/black/right.webp';
+import blackSide from '../assets/Inner-Images/Cruze-Blade/black/side.webp';
 
 // Gray
-import grayFront from '../assets/Inner-Images/Cruze-Blade/gray/front.png';
-import grayLeft from '../assets/Inner-Images/Cruze-Blade/gray/left.png';
-import grayRight from '../assets/Inner-Images/Cruze-Blade/gray/right.png';
-import graySide from '../assets/Inner-Images/Cruze-Blade/gray/side.png';
+import grayFront from '../assets/Inner-Images/Cruze-Blade/gray/front.webp';
+import grayLeft from '../assets/Inner-Images/Cruze-Blade/gray/left.webp';
+import grayRight from '../assets/Inner-Images/Cruze-Blade/gray/right.webp';
+import graySide from '../assets/Inner-Images/Cruze-Blade/gray/side.webp';
 
 // Red
-import redFront from '../assets/Inner-Images/Cruze-Blade/red/front.png';
-import redLeft from '../assets/Inner-Images/Cruze-Blade/red/left.png';
-import redRight from '../assets/Inner-Images/Cruze-Blade/red/right.png';
-import redSide from '../assets/Inner-Images/Cruze-Blade/red/side.png';
+import redFront from '../assets/Inner-Images/Cruze-Blade/red/front.webp';
+import redLeft from '../assets/Inner-Images/Cruze-Blade/red/left.webp';
+import redRight from '../assets/Inner-Images/Cruze-Blade/red/right.webp';
+import redSide from '../assets/Inner-Images/Cruze-Blade/red/side.webp';
 
 // White
-import whiteFront from '../assets/Inner-Images/Cruze-Blade/white/front.png';
-import whiteLeft from '../assets/Inner-Images/Cruze-Blade/white/left.png';
-import whiteRight from '../assets/Inner-Images/Cruze-Blade/white/right.png';
-import whiteSide from '../assets/Inner-Images/Cruze-Blade/white/side.png';
+import whiteFront from '../assets/Inner-Images/Cruze-Blade/white/front.webp';
+import whiteLeft from '../assets/Inner-Images/Cruze-Blade/white/left.webp';
+import whiteRight from '../assets/Inner-Images/Cruze-Blade/white/right.webp';
+import whiteSide from '../assets/Inner-Images/Cruze-Blade/white/side.webp';
 
 // Green
-import greenFront from '../assets/Inner-Images/Cruze-Blade/green/front.png';
-import greenLeft from '../assets/Inner-Images/Cruze-Blade/green/left.png';
-import greenRight from '../assets/Inner-Images/Cruze-Blade/green/right.png';
-import greenSide from '../assets/Inner-Images/Cruze-Blade/green/side.png';
+import greenFront from '../assets/Inner-Images/Cruze-Blade/green/front.webp';
+import greenLeft from '../assets/Inner-Images/Cruze-Blade/green/left.webp';
+import greenRight from '../assets/Inner-Images/Cruze-Blade/green/right.webp';
+import greenSide from '../assets/Inner-Images/Cruze-Blade/green/side.webp';
 
 
 // fallback if you later add more images
@@ -213,7 +213,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/919557533303?text=${encodeURIComponent(`Hi, I'm interested in the ${product.name} model!`)}`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -316,7 +316,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/919557533303?text=${encodeURIComponent(`Hi, I'm interested in the ${product.name} model!`)}`}
+          href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

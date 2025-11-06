@@ -7,9 +7,9 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import Rapidshinefront from '../assets/Inner-Images/Rapi design/1.png';
-import Rapidshineleft from '../assets/Inner-Images/Rapi design/2.png';
-import Rapidshineright from '../assets/Inner-Images/Rapi design/3.png';
+import Rapidshinefront from '../assets/Inner-Images/Rapi design/1.webp';
+import Rapidshineleft from '../assets/Inner-Images/Rapi design/2.webp';
+import Rapidshineright from '../assets/Inner-Images/Rapi design/3.webp';
 
 
 // fallback if you later add more images
@@ -184,7 +184,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"

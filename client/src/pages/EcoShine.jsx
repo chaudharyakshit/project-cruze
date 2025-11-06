@@ -7,18 +7,18 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import  bondibluefront  from '../assets/Inner-Images/Eco-Shine/bondiblue/2.png';
-import  bondiblueleft  from '../assets/Inner-Images/Eco-Shine/bondiblue/1.png';
-import  bondiblueright  from '../assets/Inner-Images/Eco-Shine/bondiblue/3.png';
-import  bondiblueside  from '../assets/Inner-Images/Eco-Shine/bondiblue/4.png'; 
-import  redfront  from '../assets/Inner-Images/Eco-Shine/red/2.png';
-import  redleft  from '../assets/Inner-Images/Eco-Shine/red/4.png';
-import  redright  from '../assets/Inner-Images/Eco-Shine/red/3.png';
-import  redside  from '../assets/Inner-Images/Eco-Shine/red/1.png'; 
-import  whitefront  from '../assets/Inner-Images/Eco-Shine/white/2.png';
-import  whiteleft  from '../assets/Inner-Images/Eco-Shine/white/4.png';
-import  whiteright  from '../assets/Inner-Images/Eco-Shine/white/3.png';
-import  whiteside  from '../assets/Inner-Images/Eco-Shine/white/1.png'; 
+import  bondibluefront  from '../assets/Inner-Images/Eco-Shine/bondiblue/2.webp';
+import  bondiblueleft  from '../assets/Inner-Images/Eco-Shine/bondiblue/1.webp';
+import  bondiblueright  from '../assets/Inner-Images/Eco-Shine/bondiblue/3.webp';
+import  bondiblueside  from '../assets/Inner-Images/Eco-Shine/bondiblue/4.webp'; 
+import  redfront  from '../assets/Inner-Images/Eco-Shine/red/2.webp';
+import  redleft  from '../assets/Inner-Images/Eco-Shine/red/4.webp';
+import  redright  from '../assets/Inner-Images/Eco-Shine/red/3.webp';
+import  redside  from '../assets/Inner-Images/Eco-Shine/red/1.webp'; 
+import  whitefront  from '../assets/Inner-Images/Eco-Shine/white/2.webp';
+import  whiteleft  from '../assets/Inner-Images/Eco-Shine/white/4.webp';
+import  whiteright  from '../assets/Inner-Images/Eco-Shine/white/3.webp';
+import  whiteside  from '../assets/Inner-Images/Eco-Shine/white/1.webp'; 
 
 const PLACEHOLDER = '/src/assets/hero-1.webp';
 
@@ -191,7 +191,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"

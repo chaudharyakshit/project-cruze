@@ -24,10 +24,19 @@
     <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <!-- index.html <head> -->
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="/src/assets/main-logo-3pCqRZOR.png" type="image/png">
+    
+    <!-- Load fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
 
     <title>Ecocruze</title>
+    
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Ecocruze - Electric Vehicle Manufacturer">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div id="root"></div>

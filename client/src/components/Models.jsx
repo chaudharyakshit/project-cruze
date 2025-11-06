@@ -2,9 +2,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Models.css';
 import { motion } from 'framer-motion';
-import EcoShine from '../assets/Eco-Shine.png'
-import EcoGlider from '../assets/Eco-Glider.png'
-import Ecojoy from '../assets/eco-joy.png'
+import EcoShine from '../assets/Eco-Shine.webp'
+import EcoGlider from '../assets/Eco-Glider.webp'
+import Ecojoy from '../assets/eco-joy.webp'
+import EcoZeon from '../assets/Inner-Images/Eco Zeon/Eco-zeon.webp'
 
 // 3D scooter models from reputable sources
 const models = [
@@ -20,7 +21,10 @@ const models = [
       { value: '90Km', label: 'Range' },
       { value: '3.5h', label: 'Charge Time' }
     ],
-    colors: ['#c00', '#333', '#0066cc']
+    colors: ['#c00', '#333', '#0066cc'],
+    featured: true,
+    stockStatus: 'In Stock',
+    manufacturingYear: '2024'
   },
   {
     id: 2,
@@ -34,21 +38,44 @@ const models = [
       { value: '75Km', label: 'Range' },
       { value: '3.5h', label: 'Charge Time' }
     ],
-    colors: ['#00cc66', '#222', '#ffcc00']
+    colors: ['#00cc66', '#222', '#ffcc00'],
+    featured: true,
+    stockStatus: 'Limited Stock',
+    manufacturingYear: '2024'
   },
   {
     id: 3,
     name: 'Eco Joy',
     tagline: 'Off-Road Adventure',
     price: 'Starting at ',
-    image: Ecojoy ,
+    image: Ecojoy,
     poster: Ecojoy,
     specs: [
       { value: '60', label: 'Km/h' },
       { value: '80Km', label: 'Range' },
       { value: '3.5', label: 'Charge Time' }
     ],
-    colors: ['#663300', '#222', '#cc0000']
+    colors: ['#663300', '#222', '#cc0000'],
+    featured: true,
+    stockStatus: 'In Stock',
+    manufacturingYear: '2024'
+  },
+  {
+    id: 4,
+    name: 'Eco Zeon',
+    tagline: 'Urban Performance',
+    price: 'Starting at ',
+    image: EcoZeon,
+    poster: EcoZeon,
+    specs: [
+      { value: '60', label: 'Km/h' },
+      { value: '100Km', label: 'Range' },
+      { value: '3.5h', label: 'Charge Time' }
+    ],
+    colors: ['#050553', '#e74c3c'],
+    featured: true,
+    stockStatus: 'In Stock',
+    manufacturingYear: '2024'
   }
 ];
 
@@ -132,8 +159,8 @@ const Models = () => {
   return (
     <section className="models-section">
       <div className="models-header">
-        <h2 className="section-title1">Our Latest Models</h2>
-        <p className="section-subtitle"> Make it Yours</p>
+        <h2 className="section-title1">Latest Featured Scooty Inventory</h2>
+        <p className="section-subtitle">Discover Our Premium Collection</p>
       </div>
       
       <div className="models-container">
@@ -152,7 +179,12 @@ const Models = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="model-badge">New</div>
+                <div className="model-badge-container">
+                  <div className="model-badge">Featured</div>
+                  <div className={`stock-badge ${model.stockStatus === 'Limited Stock' ? 'limited' : ''}`}>
+                    {model.stockStatus}
+                  </div>
+                </div>
                 <div className="model-image-container">
                   {is3DLoaded ? (
                     <model-viewer
@@ -189,12 +221,13 @@ const Models = () => {
                   <div className="model-text">
                     <h3 className="model-name">{model.name}</h3>
                     <p className="model-tagline">{model.tagline}</p>
+                    <p className="manufacturing-year">Manufacturing Year: {model.manufacturingYear}</p>
                   </div>
                   <div>
                     <span className='Starting-Text1'>Starting at</span>
            <a 
            
-  href={`https://wa.me/918607998882?text=Hi, I'm interested in the ${model.name} model!`} 
+  href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${model.name} model!`} 
   className="whatsapp-link1" 
   target="_blank" 
   rel="noopener noreferrer"

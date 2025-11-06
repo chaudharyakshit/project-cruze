@@ -1,11 +1,10 @@
-// components/Header/Header.jsx
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom'; 
 import './Header.css';
-import { FaSearch, FaUser, FaShoppingBag, FaBars } from 'react-icons/fa';
-import logo from '../assets/main-logo.png';
+import { FaBars } from 'react-icons/fa';
+import logo from '../assets/main-logo.webp';
 
-const Header = ({ scrolled }) => {
+const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const location = useLocation();
 
@@ -16,7 +15,7 @@ const Header = ({ scrolled }) => {
   }, [location.pathname]);
 
   return (
-    <header className={scrolled ? 'scrolled' : ''}>
+    <header>
       <div className="main-header">
         <Link to="/" className="logo">
           <img src={logo} alt="Ecocruze Motorcycles" />
@@ -30,13 +29,11 @@ const Header = ({ scrolled }) => {
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/dealership">Dealership</Link></li>
             <li><Link to="/news">News</Link></li>
+            <li><Link to="/invertors">Ecocruze Invertors</Link></li>
           </ul>
         </nav>
         
         <div className="header-actions">
-
-          {/* <Link to="/account"><FaUser /></Link>
-          <Link to="/cart"><FaShoppingBag /></Link> */}
           <button 
             className="mobile-menu-btn" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

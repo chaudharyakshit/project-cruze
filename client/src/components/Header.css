@@ -33,6 +33,8 @@ header {
 nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -78,7 +80,7 @@ nav ul li a:hover {
   display: none;
   background: none;
   border: none;
-  color: black; /* ✅ Now visible */
+  color: black;
   font-size: 24px;
   cursor: pointer;
 }
@@ -99,10 +101,10 @@ nav ul li a:hover {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff; /* ✅ Matches header */
+    background-color: #fff;
     border-top: 1px solid #ddd;
-    padding: 8px 0; /* compact */
-    max-height: 60vh; /* don't cover entire screen */
+    padding: 8px 0;
+    max-height: 60vh;
     overflow-y: auto;
     z-index: 999;
   }
@@ -113,9 +115,9 @@ nav ul li a:hover {
   }
 
   nav.mobile-open ul li a {
-    color: black; /* ✅ Visible on white */
+    color: black;
     font-size: 15px;
-    padding: 8px 12px; /* tighter */
+    padding: 8px 12px;
     display: inline-block;
     width: 100%;
   }
@@ -127,7 +129,7 @@ nav ul li a:hover {
   }
   
   .logo {
-    width: 96px; /* reduce for small phones */
+    width: 96px;
   }
 
   nav.mobile-open ul li a {

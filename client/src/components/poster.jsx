@@ -1,7 +1,7 @@
 import React from 'react';
 import './poster.css';
-import Rapidsign from '../assets/Rapi-dsign.png';
-import ecoglider from '../assets/Eco-Glider.png';
+import Rapidsign from '../assets/Rapi-dsign.webp';
+import ecoglider from '../assets/Eco-Glider.webp';
 import { Link } from "react-router-dom";
 
 const Poster = () => {

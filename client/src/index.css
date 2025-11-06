@@ -1,25 +1,39 @@
-/* Add these rules to your existing index.css */
+/* Header spacing + image zoom safety
+   Keep header spacing similar to original and minimal zoom helpers.
+*/
 :root {
   --header-h: 80px;
 }
+
 html, body {
-  overflow-x: hidden; /* This prevents horizontal scrolling */
+  overflow-x: hidden; /* prevents horizontal scrolling */
   width: 100%;
-  max-width: 100%; /* Ensures content doesn't exceed viewport width */
-  margin: 0;
-}
-
-/* Optional: Add these if you're still seeing overflow issues */
-body {
-  position: relative; /* Helps contain absolutely positioned elements */
-}
-
-/* This will prevent any child element from causing overflow */
-.container, .dual-posters, .scooty-poster {
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* Ensure content clears the fixed header */
+/* Ensure images scale properly with zoom */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lightbox / hero: constrain to viewport minus header but don't force page layout changes */
+.lightbox, .pdp-hero, .image-container, .banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: calc(100vh - var(--header-h) - 20px);
+  object-fit: contain;
+}
+
+/* Keep the original header offset behavior so the site layout isn't shifted */
 main {
   padding-top: var(--header-h);
 }

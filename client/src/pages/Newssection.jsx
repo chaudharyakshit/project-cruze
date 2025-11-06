@@ -9,30 +9,30 @@ const BannerSection = () => (
 );
 
 // Local images
-import img from "../assets/news1.jpg";
-import img1 from "../assets/news2.jpg";
-import img2 from "../assets/news3.jpg";
-import img3 from "../assets/news4.jpg";
-import img5 from "../assets/news5.jpg";
+import img from "../assets/news1.webp";
+import img1 from "../assets/news2.webp";
+import img2 from "../assets/news3.webp";
+import img3 from "../assets/news4.webp";
+import img5 from "../assets/news5.webp";
 
 // News items data
 const newsItems = [
   {
     id: 1,
-    image: img1,
+    image: img,
     tag: "",
     tagColor: "#000000",
     lang: "hi",
-    title: "DPL 2025 का आगाज़: Indiasgo डायरेक्टर विजयेंद्र गोस्वामी की टीम Tax Flickers ने किया शानदार शुरुआत",
-    link: "https://dcdcu.in/tax-flickers-uttrakhand/"
+    title: "बॉलीवुड एक्टर अरूण बख्शी जी आज indiasgo के कॉपोर्रेट ऑफिस नोएडा पहुंचे और प्रोजेक्टindiasgo Trip और इकॉक्रूज स्कूटी के प्रोजेक्ट पर हुई चर्चा ऑटोफ़्लेज प्रोजेक्ट की प्लानिंग हुई सफल",
+    link: "#"
   },
   {
     id: 2,
-    image: img,
+    image: img1,
     tag: "",
     tagColor: "#222",
     lang: "hi",
-    title: "बॉलीवुड एक्टर अरूण बख्शी जी आज indiasgo के कॉपोर्रेट ऑफिस नोएडा पहुंचे और प्रोजेक्टindiasgo Trip और इकॉक्रूज स्कूटी के प्रोजेक्ट पर हुई चर्चा ऑटोफ़्लेज प्रोजेक्ट की प्लानिंग हुई सफल",
+    title: "_Ecocruze Launches Eco-Friendly Scooty Model GreenZoom_ 👍💻",
     
   },
   {
@@ -64,7 +64,7 @@ const newsItems = [
   },
   {
     id: 6,
-    image: img2,
+    image: img1,
     tag: "",
     tagColor: "#e26c21",
     lang: "en",

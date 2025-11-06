@@ -7,10 +7,10 @@ import { Navigation } from 'swiper/modules';
 
 
 
-import MintGreenFront from '../assets/Inner-Images/Eco Glider/2.png';
-import MintGreenleft  from '../assets/Inner-Images/Eco Glider/1.png';
-import MintGreenright from '../assets/Inner-Images/Eco Glider/4.png';
-import MintGreenside  from '../assets/Inner-Images/Eco Glider/3.png';
+import MintGreenFront from '../assets/Inner-Images/Eco Glider/2.webp';
+import MintGreenleft  from '../assets/Inner-Images/Eco Glider/1.webp';
+import MintGreenright from '../assets/Inner-Images/Eco Glider/4.webp';
+import MintGreenside  from '../assets/Inner-Images/Eco Glider/3.webp';
 // fallback if you later add more images
 const PLACEHOLDER = '/src/assets/hero-1.webp';
 
@@ -183,7 +183,7 @@ export default function ScootyDetails() {
             <div className="pdp-price-row">
               <span className="Starting-Text1">Starting at</span>
               <a
-                href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+                href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
                 className="whatsapp-link1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -286,7 +286,7 @@ export default function ScootyDetails() {
       <div className="pdp-sticky-cta">
         <span className="Starting-Text1">Starting at</span>
         <a
-          href={`https://wa.me/9195575 33303?text=Hi, I'm interested in the ${product.name} model!`}
+          href={`https://wa.me/919557533303?text=Hi, I'm interested in the ${product.name} model!`}
           className="whatsapp-link1"
           target="_blank"
           rel="noopener noreferrer"

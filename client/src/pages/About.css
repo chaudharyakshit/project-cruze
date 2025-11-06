@@ -1,6 +1,6 @@
 /* ====== Banner Section ====== */
 .about-banner {
-  background: url('../assets/about1.png') right center/cover no-repeat;
+  background: url('../assets/about1.webp') right center/cover no-repeat;
   height: 300px;
   display: flex;
   align-items: center;

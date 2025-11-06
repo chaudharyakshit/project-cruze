@@ -13,14 +13,14 @@ const testimonials = [
   {
     id: 2,
     text: "The ECOCRUZE  is the perfect balance of power and agility. I've taken it on cross-country trips and city commutes - it handles everything with ease and turns heads everywhere I go.",
-    name: "Ravindra",
+    name: "Vinay",
     
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmt7mgLLJbU_An415Sur0-Iq8kRKQzzAwCw&s"
   },
   {
     id: 3,
     text: "As a long-time rider, I was skeptical about trying a new brand. The ECOCRUZE completely changed my mind. The performance and build quality are unmatched in its class.",
-    name: "Dimple",
+    name: "Sakshi",
     image: "https://thumbs.dreamstime.com/b/serious-young-indian-woman-standing-indoor-arms-crossed-unsmiling-dressed-blue-casual-shirt-having-calm-composed-face-364421490.jpg"
   }
 ];
