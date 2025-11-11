@@ -59,6 +59,7 @@
   display: flex;
   gap: 30px;
   transition: transform 0.5s ease;
+  align-items: center;
 }
 
 .model-card {
@@ -69,8 +70,15 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* Make image column much wider so model images appear noticeably larger on desktop */
+  grid-template-columns: 65% 35%;
   flex-shrink: 0;
+}
+
+.model-card.active {
+  z-index: 5;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  transform: translateY(0) scale(1);
 }
 
 .model-badge-container {
@@ -113,12 +121,36 @@
 
 .model-image-container {
   position: relative;
-  padding: 40px;
+  /* reduce inner padding and increase height so image appears bigger */
+  padding: 12px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  /* increase height to give images more visual area on desktop */
+  height: 640px;
+  max-height: 72vh;
+}
+
+/* On very large screens use a fixed, generous image column so the image is unmistakably large */
+@media (min-width: 1400px) {
+  .model-card {
+    /* fixed image column width and flexible info column */
+    grid-template-columns: 720px 1fr;
+  }
+
+  .model-image-container {
+    /* remove vertical centering so image uses full width of the column */
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .model-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
 
 .model-3d-viewer {
@@ -134,9 +166,16 @@
   object-fit: contain;
   transition: transform 0.5s ease;
 }
-
 .model-card:hover .model-image {
-  transform: scale(1.05);
+  transform: scale(1.06);
+}
+
+/* Ensure fallback image scales to fill its column on all viewports */
+.model-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
 }
 
 /* .model-colors {
@@ -331,18 +370,48 @@
 }
 
 @media (max-width: 1024px) {
+  .models-scroll-container {
+    overflow-x: auto; /* allow swipe/scroll on touch devices */
+  }
+
+  .models-scroll-content {
+    scroll-snap-type: x mandatory;
+  }
+
   .model-card {
-    min-width: calc(100% - 40px);
+    /* ensure each card occupies the full carousel width on mobile so the image can be large */
+    min-width: 100%;
+    max-width: 100%;
     grid-template-columns: 1fr;
+    padding: 0 12px;
+    scroll-snap-align: center;
   }
   
+  /* Mobile / tablet: make the image fill the top area and be large and centered */
   .model-image-container {
-    padding: 30px;
-    height: 350px;
+    /* give the image column a lot of vertical space and remove extra inner padding */
+    padding: 8px 12px;
+    height: 46vh;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Ensure the fallback <img> and 3D viewer fill the column on smaller screens */
+  .model-image,
+  .model-3d-viewer,
+  model-viewer {
+    /* fill the image container and crop slightly to make subject larger */
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
   }
   
   .model-info {
-    padding: 30px;
+    padding: 20px; /* reduce padding to leave more space for image */
   }
   
   .nav-button {
@@ -369,6 +438,13 @@
     width: 100%;
     text-align: center;
   }
+
+  /* Slightly reduce image height on smaller tablets/phones */
+  .model-image-container {
+    height: 38vh;
+    min-height: 300px;
+    padding: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -390,8 +466,28 @@
     font-size: 1rem;
   }
   
+  /* Mobile narrow screens: prominent image area, stacked layout */
   .model-image-container {
-    height: 250px;
+    height: 40vh;
+    min-height: 260px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .model-image,
+  .model-3d-viewer,
+  model-viewer {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* ensure active card doesn't get shrunk by desktop emphasis rules */
+  .model-card:not(.active) {
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -417,4 +513,69 @@
   font-weight: 900;
   font-size: 1.2rem;
   color: #333;
+}
+
+/* Make the image fill more of the left column on typical desktop widths (>=1024px) */
+@media (min-width: 1024px) {
+  .model-image {
+    /* make the image fill most of the image column and allow cropping so the scooter appears larger */
+    width: 90% !important;
+    height: 88% !important;
+    max-width: none !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+  .model-image-container {
+    /* center the (now larger) image nicely */
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Visually emphasize the active card and de-emphasize inactive cards so the image stands out */
+.model-card:not(.active) {
+  opacity: 0.6;
+  transform: scale(0.98);
+}
+.model-card.active {
+  transform: none;
+}
+
+/* Ensure the image element itself centers and has no extra whitespace */
+.model-image {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Make the active card's image / 3D viewer fill more of the image column so it stays large */
+.model-card.active .model-image,
+.model-card.active .model-3d-viewer,
+.model-card.active model-viewer {
+  width: 95% !important;
+  height: 92% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important; /* crop blank margins so scooter fills area */
+  display: block !important;
+}
+
+/* Keep inactive images smaller so the active one stands out */
+.model-card:not(.active) .model-image,
+.model-card:not(.active) .model-3d-viewer,
+.model-card:not(.active) model-viewer {
+  width: 60% !important;
+  height: 60% !important;
+  object-fit: contain !important;
+}
+
+/* If the 3D viewer injects inline styles, this forces its container to allow expansion */
+.model-image-container,
+.model-image-container > model-viewer,
+.model-image-container > .model-3d-viewer {
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
 }
