@@ -1,31 +1,14 @@
 .bold-banner1 {
-  position: relative;
   width: 100%;
-  min-height: clamp(220px, 36vh, 360px);
-  background: #000;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 22px;
 }
 
-.bold-banner-bg1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/banner12.webp');
-  background-size: contain; /* desktop keeps full artwork */
-  background-position: right center; /* keep scooter visible */
-  background-repeat: no-repeat;
-  z-index: 1;
+.bold-banner-img {
+  width: 100%;      /* fill width */
+  height: auto;     /* keep aspect ratio, no cropping */
+  display: block;
 }
-
-
 
 /* --- News Section --- */
 .news-root {
@@ -148,14 +131,6 @@
 
 @media (max-width: 800px) {
   .news-root { padding-top: 40px; }
-  .bold-banner1 {
-    min-height: clamp(180px, 32vh, 300px);
-  }
-  .bold-banner-bg1 {
-  background-size: cover; /* mobile fill */
-  background-position: right center; /* focus on scooter */
-  background-color: #000;
-  }
   .news-title { font-size: 2rem; }
   .news-subhead { font-size: 1.1rem; margin-bottom: 1.1em; }
   .news-grid { gap: 15px; }

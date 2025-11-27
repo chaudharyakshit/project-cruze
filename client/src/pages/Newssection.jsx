@@ -1,10 +1,11 @@
 import React from "react";
 import "./Newssection.css";
+import newsBanner from "../assets/banner14.webp";
 
-// Banner Component
+// Banner Component (use real <img> so it never crops and fills width)
 const BannerSection = () => (
   <section className="bold-banner1">
-    <div className="bold-banner-bg1" />
+    <img src={newsBanner} alt="Ecocruze scooter banner" className="bold-banner-img" />
   </section>
 );
 
